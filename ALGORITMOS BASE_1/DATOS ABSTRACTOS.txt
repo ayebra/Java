@@ -1,0 +1,51 @@
+﻿public class Pila
+{	
+	public static int Pila[] = new int[10], Tope=-1, Dat;
+	public static boolean Band;
+//Metodo que verifica si la PILA esta vacia asignado a Band, el valor de verdad correspondiente.
+	public static void Pilavacia(int Tope)
+{
+	if(Tope ==-1)
+		Band = true;
+	else
+
+		Band = false;
+}
+//Metodo que verifica so la PILA esta llena asignando a Band, el valor de verdad correspondientes.
+	public static void PilaLlena()
+{
+	if(Tope ==9)
+		Band = true;
+	else
+		Band = false;
+}
+	public static void Push(int Dat)
+{
+	PilaLlena();
+	if(Band == true)
+		System.out.println("OVERFLOW");
+	else
+{
+	Tope = Tope +1;
+	Pila[Tope]= Dat;
+}
+}
+	public static void Pop()
+{
+	pilavacia(Tope);
+	if(Band == true)
+		System.out.println("UNDERFLOW");
+	else
+	{
+		Dat = Pila[Tope];
+		Tope = Tope-1;
+	}
+}
+	public static void Recorrer()
+{
+	int i;
+	if(Tope! =-1)
+	for(i = Tope; i>=0:i--)
+{
+		System.out.println(" "+Pila[i]);
+}

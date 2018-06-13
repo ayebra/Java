@@ -1,0 +1,38 @@
+Algoritmo de Eliminación de una Pila
+
+public static void Quitar()
+{	PilaVacia(Tope);
+	if (band==true)
+		System.out.println("Bajo Flujo");
+	else{
+		Temp = Pila[Tope];
+		Tope--;
+	}
+}
+
+......................................................................................
+
+public static void PilaVacia(int Tope)
+{	if(Tope==-1)
+		band = true;
+	else
+		band = false;
+}
+
+
+
+
+Se tiene una estrucutra tipo pila en la que deberás insertar y eliminar datos tipo String,
+esta misma deberá eliminar los datos repetidos asi como mostar los datos que estan en la estructura.
+
+
+
+
+
+
+
+
+
+
+
+

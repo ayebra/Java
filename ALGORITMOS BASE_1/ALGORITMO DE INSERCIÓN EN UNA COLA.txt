@@ -1,0 +1,12 @@
+void insertar(int Dato)
+{	
+	if(Final<5) //Verifica que hay espacio libre
+	{
+		Final++; //Actualiza el Final
+		Cola[Final]=Dato;
+		if (Final ==0) //Se inserta el primer elemento
+				Frente = 0;
+	}
+	else
+		System.out.println("OVERFLOW");
+}

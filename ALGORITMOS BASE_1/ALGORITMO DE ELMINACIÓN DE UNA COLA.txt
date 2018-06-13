@@ -1,0 +1,16 @@
+void Eliminar()
+{
+	if (Frente!=1) //Verifica que la cola no esta vacía
+	{
+		Temp=Cola[Frente];
+		if (Frente == Final) //Indica que hay un solo elemento
+		{ //Indica que la cola queda vacía
+			Frente =1;
+			Final=-1;
+	}
+	else
+		Frente++;
+	}
+	else
+		System.out.println("UNDERFLOW");
+}
